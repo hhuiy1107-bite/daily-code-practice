@@ -24,3 +24,8 @@ Release/
 *.log
 *.tmp
 *.bak
+# 过滤 Visual Studio 项目和解决方案文件
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
