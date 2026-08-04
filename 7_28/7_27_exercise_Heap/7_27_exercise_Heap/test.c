@@ -32,10 +32,26 @@ void Heaptest02()
 }
 
 
+void Heaptest03()
+{
+	//向下调整原地建堆
+
+	TypeData arr[] = { 2, 9, 5, 3, 7, 6, 4, 1, 4 };
+	int leaf = (sizeof(arr) / sizeof(TypeData) - 2) / 2;
+
+	for (int i = leaf; i >= 0; i--)
+	{
+		AdjustDown(arr, i, sizeof(arr) / sizeof(TypeData));
+	}
+}
+
+
 int main()
 {
 	//Heaptest01();
 
 	Heaptest02();
+
+	Heaptest03();
 	return 0;
 }
